@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.board {
+	border: 1px solid black;
+}
+.square {
+	width: 200px;
+	height: 200px;
+	border: 1px solid black;
+	cursor: pointer;
+	transition: 100ms;
+	font-size: 9rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.square:hover {
+	background-color: #f3f4f6;
+}

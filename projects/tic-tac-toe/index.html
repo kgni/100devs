@@ -4,10 +4,35 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="src/css/reset.css" />
 		<link rel="stylesheet" href="src/css/output.css" />
 		<title>TIC TAC TOE</title>
 	</head>
-	<body>
-		<main></main>
+	<body class="min-h-screen">
+		<main class="min-h-screen flex justify-center items-center flex-col">
+			<h1 class="text-8xl mb-20">TIC TAC TOE</h1>
+			<div class="board grid grid-cols-3 bg-gray-300 border-2 border-red-900">
+				<div class="square square1"></div>
+				<div class="square square2"></div>
+				<div class="square square3"></div>
+				<div class="square square4"></div>
+				<div class="square square5"></div>
+				<div class="square square6"></div>
+				<div class="square square7"></div>
+				<div class="square square8"></div>
+				<div class="square square9"></div>
+			</div>
+			<div
+				class="winner-modal hidden absolute w-full h-full top-0 bg-black/70 flex items-center justify-center font-bold text-7xl flex-col"
+			>
+				<h2 class="winner-text text-white mb-14">X WINS</h2>
+				<button
+					class="restart-button text-white text-3xl rounded-full bg-black hover:bg-slate-100 hover:text-black transi py-4 px-8 transition-all duration-100"
+				>
+					RESTART
+				</button>
+			</div>
+		</main>
+		<script src="./main.js"></script>
 	</body>
 </html>
