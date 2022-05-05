@@ -1,0 +1,43 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+header {
+	background-color: #000;
+}
+
+nav {
+	display: flex;
+	max-width: 80%;
+	margin: 0 auto;
+	align-items: center;
+}
+
+nav img {
+	height: 40px;
+	margin-right: 200px;
+}
+
+nav ul {
+	display: flex;
+	list-style-type: none;
+	align-items: center;
+	gap: 30px;
+	margin-right: 40px;
+}
+
+nav a:link,
+nav a:visited {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+nav input {
+	margin-left: auto;
+	height: 20px;
+}

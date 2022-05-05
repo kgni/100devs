@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- GOOGLE FONTS -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- FONT AWESOME -->
+		<script
+			src="https://kit.fontawesome.com/e4b743f868.js"
+			crossorigin="anonymous"
+		></script>
+
+		<title>THE WEATHER APP</title>
+		<link rel="stylesheet" href="reset.css" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header class="main-header">
+			<nav class="main-nav">
+				<div class="logo">THE WEATHER APP</div>
+				<div class="search-input">
+					<input type="text" placeholder="Search for the weather.." />
+					<button class="btn">Search</button>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<div class="loader hide">
+				<div class="lds-roller">
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+			<section class="current-weather">
+				<div class="location">
+					<i class="fa-solid fa-location-dot"></i>
+					<h3 class="current-city">Copenhagen</h3>
+				</div>
+				<img
+					src="http://openweathermap.org/img/wn/10d@2x.png"
+					alt=""
+					class="current-icon"
+				/>
+				<h3 class="weather-description">Cloudy</h3>
+				<h2 class="current-temp">12</h2>
+				<div class="wind-humid-container">
+					<div class="wind-container">
+						<i class="fa-solid fa-wind"></i>
+						<h4 class="wind"></h4>
+					</div>
+					<div class="humid-container">
+						<i class="fa-solid fa-droplet"></i>
+						<h4 class="humid"></h4>
+					</div>
+				</div>
+				<div class="sunrise-sunset"></div>
+			</section>
+			<section class="forecast"></section>
+		</main>
+		<script src="main.js"></script>
+	</body>
+</html>

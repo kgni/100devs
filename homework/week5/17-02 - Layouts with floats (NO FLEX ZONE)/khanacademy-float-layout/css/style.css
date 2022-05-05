@@ -1,0 +1,185 @@
+/* Box Model Hack */
+* {
+	box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+	content: '.';
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+	font-family: 'Lato', sans-serif;
+	/* font-family: 'Source Serif Pro', serif; */
+}
+
+html {
+	font-size: 62.5%;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+.container {
+	width: 70%;
+	margin: 0 auto;
+}
+
+header {
+	height: 60px;
+	margin-bottom: 100px;
+	border-bottom: 2px solid rgb(245, 245, 245);
+}
+
+nav {
+	position: relative;
+	padding: 2rem 0;
+}
+
+nav * {
+	float: left;
+}
+
+.right-container {
+	float: right;
+}
+
+.left-container,
+.logo-container,
+.right-container {
+}
+
+.left-container {
+	width: 40%;
+}
+
+.logo-container {
+	width: 25%;
+}
+
+.right-container {
+	width: 25%;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+/* NAV BAR */
+
+h2 {
+	font-size: 1.8rem;
+	font-weight: 900;
+	color: #0f3b8d;
+	cursor: pointer;
+	transition: 100ms ease;
+}
+
+h2:hover {
+	color: #1865f2;
+}
+a:link,
+a:visited {
+	font-size: 16px;
+	color: #1865f2;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.left-container a {
+	margin-right: 2rem;
+}
+
+.left-container input {
+	margin-top: -0.6rem;
+	border: none;
+	color: hsl(219, 89%, 52%);
+	background-color: #e3e5e6;
+	font-weight: bold;
+	font-size: 1.6rem;
+	padding: 0.6rem;
+	border-radius: 3px;
+	width: 30%;
+}
+
+.left-container input::placeholder {
+	opacity: 1;
+}
+
+.logo-container img {
+	width: 2.5%;
+	position: absolute;
+	top: 20%;
+	right: 60%;
+}
+
+nav ul {
+	list-style-type: none;
+	margin-left: auto;
+}
+
+nav ul li {
+	width: 25%;
+}
+
+/* HERO SECTION */
+
+.hero-section {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.hero-section img,
+.hero-section section {
+	float: left;
+	width: 45%;
+}
+
+.hero-section img {
+	margin-right: 3rem;
+	margin-left: auto;
+}
+
+h1 {
+	font-family: 'Source Serif Pro', serif;
+	color: #21242c;
+	font-size: 5.3rem;
+	font-weight: 600;
+	letter-spacing: 2px;
+	margin: 7.2rem 0 2.4rem 0;
+}
+
+p {
+	font-size: 18px;
+	margin-bottom: 6.2rem;
+	line-height: 2;
+}
+
+section a:link,
+section a:visited {
+	padding: 1.4rem 2.4rem;
+	border-radius: 6px;
+	margin-right: 0.6rem;
+	color: white;
+	background-color: #1865f2;
+	transition: 100ms ease;
+}
+
+section a:hover,
+section a:active {
+	background-color: hsl(219, 89%, 47%);
+}

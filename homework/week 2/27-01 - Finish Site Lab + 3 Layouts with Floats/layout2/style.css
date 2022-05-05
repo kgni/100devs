@@ -1,0 +1,41 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: gray;
+}
+
+header,
+footer {
+	height: 15vh;
+	width: 100%;
+}
+
+header,
+.section-1 {
+	border-bottom: 2px solid black;
+}
+
+.section-1 {
+	height: 30vh;
+}
+
+.section-2,
+.section-3 {
+	width: 33.333%;
+	height: 40vh;
+	border-right: 2px solid black;
+	float: left;
+}
+
+.section-3 {
+	width: 66.6666667%;
+}
+
+footer {
+	border-top: 2px solid black;
+	clear: both;
+}

@@ -1,0 +1,100 @@
+/******************************************
+/* HOT GARBAGE - PLEASE DON'T MIMIC THIS CSS
+/*******************************************/
+
+/* Box Model Hack */
+* {
+	box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+h1,
+h2 {
+	text-align: center;
+	margin-bottom: 2.4rem;
+}
+img {
+	display: block;
+	height: 300px;
+	margin: 0 auto;
+}
+
+body {
+	font-family: 'Courier New', Courier, monospace;
+}
+
+p {
+	margin-top: 0;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+.calculator {
+	width: 400px;
+	margin: 0 auto;
+	background-color: #333;
+	padding: 0.4rem 0.4rem;
+}
+
+.result {
+	height: 80%;
+	background-color: #98b755;
+	margin-bottom: 0.4rem;
+
+	font-size: 2.4rem;
+	padding-right: 0.4rem;
+	text-align: right;
+	word-break: break-all;
+}
+
+.row {
+	display: flex;
+	justify-content: space-between;
+	gap: 0.2rem;
+	margin-bottom: 0.2rem;
+}
+
+.btn {
+	background-color: #999;
+	flex-basis: 25%;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 40px;
+	cursor: pointer;
+	font-weight: 600;
+	font-size: 1.4rem;
+	transition: 100ms ease;
+}
+
+.btn:hover {
+	background-color: rgb(192, 192, 192);
+}
+.btn:active {
+	transform: scale(0.97);
+}
+
+.row6 {
+	margin-bottom: 0;
+}
+.reset {
+	flex: 1;
+	margin-bottom: 0;
+	background-color: rgb(209, 21, 21);
+	color: #fff;
+	font-weight: bold;
+}
+
+.reset:hover {
+	background-color: rgb(247, 41, 41);
+}
+
+.reset:active {
+	background-color: rgb(209, 21, 21);
+	transform: scale(0.99);
+}

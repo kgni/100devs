@@ -1,0 +1,94 @@
+/******************************************
+/* HOT GARBAGE - PLEASE DON'T MIMIC THIS CSS
+/*******************************************/
+
+/* Box Model Hack */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+main {
+	height: 100vh;
+	background-color: rgb(206, 206, 206);
+	display: flex;
+	justify-content: center;
+	padding-top: 9.6rem;
+}
+
+.text-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.answer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 200px;
+	margin-bottom: 4rem;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+h1 {
+	font-size: 4.8rem;
+	margin-bottom: 4.8rem;
+}
+
+h2 {
+	display: flex;
+	align-items: center;
+	font-size: 3.2rem;
+	margin-bottom: 2.4rem;
+}
+
+input {
+	padding: 0.8rem 1.2rem;
+	border: 0;
+	margin-bottom: 1.2rem;
+	width: 175px;
+}
+
+input::placeholder {
+}
+
+.btn:link,
+.btn:visited {
+	background-color: black;
+	width: 175px;
+	text-align: center;
+	padding: 1.4rem 0;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 1px;
+	color: #fff;
+	font-size: 1.2rem;
+	transition: 100ms ease;
+}
+
+.btn:active {
+	transform: scale(0.95);
+}
+
+.answer iframe {
+	margin-bottom: 2.4rem;
+	width: 100%;
+}

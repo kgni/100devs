@@ -1,0 +1,112 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+* {
+	box-sizing: border-box;
+}
+
+main {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+
+	align-items: center;
+}
+
+.container {
+	text-align: center;
+	background-color: #000;
+	padding: 4.8rem 3rem;
+	border-radius: 30px;
+	position: relative;
+}
+
+h1 {
+	font-size: 2rem;
+	text-transform: uppercase;
+	margin-bottom: 4.8rem;
+	color: #fff;
+	font-weight: bold;
+}
+
+sup {
+	vertical-align: top;
+	font-size: 1.2rem;
+}
+
+p {
+	margin-bottom: 4.8rem;
+	font-size: 2.4rem;
+	color: #fff;
+}
+
+.inputs {
+	margin-bottom: 3.6rem;
+	display: flex;
+	align-items: center;
+	gap: 1.2rem;
+}
+
+.inputs span {
+	color: #fff;
+}
+
+.error {
+	font-weight: bold;
+	margin-bottom: 0;
+	color: #fff;
+	background-color: red;
+	width: 78%;
+	padding: 1.2rem 2.4rem;
+	font-size: 1.2rem;
+	text-decoration: none;
+	position: absolute;
+	left: 50%;
+	top: 35%;
+	transform: translate(-50%);
+}
+
+button {
+	display: block;
+	margin: 0 auto;
+	border: 0;
+	background-color: #fff;
+	color: #000;
+	padding: 0.8rem 2.4rem;
+	border-radius: 50px;
+	cursor: pointer;
+	font-weight: bold;
+	transition: 100ms ease;
+}
+
+.do-math {
+	margin-bottom: 3.6rem;
+}
+
+.reset {
+	text-transform: uppercase;
+	background-color: red;
+	color: #fff;
+	position: relative;
+	bottom: 0;
+}
+
+button:hover {
+	transform: scale(1.05);
+}
+button:active {
+	transform: scale(1);
+}
+
+.hide {
+	visibility: hidden;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

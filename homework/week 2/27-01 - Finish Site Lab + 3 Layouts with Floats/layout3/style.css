@@ -1,0 +1,38 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: gray;
+}
+
+header,
+footer {
+	height: 20vh;
+	width: 100%;
+}
+
+header {
+	border-bottom: 2px solid black;
+}
+
+.section-1,
+.section-2,
+.section-3,
+.section-4 {
+	width: 20%;
+	height: 60vh;
+	border-right: 2px solid black;
+	float: left;
+}
+
+.section-2 {
+	width: 40%;
+}
+
+footer {
+	border-top: 2px solid black;
+	clear: both;
+}

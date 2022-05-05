@@ -1,0 +1,83 @@
+/* GENERAL STYLING */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: gray;
+}
+
+/* LAYOUT */
+
+header,
+footer {
+	height: 20vh;
+	width: 100%;
+	border: 1px solid black;
+	clear: both;
+}
+
+section {
+	height: 60vh;
+	width: 20%;
+	border: 1px solid black;
+	float: left;
+}
+
+.big-one {
+	width: 40%;
+}
+
+/* SECTION COLORS */
+
+.section-1 {
+	background-color: hsl(204, 75%, 30%);
+}
+.section-2 {
+	background-color: hsl(204, 75%, 50%);
+}
+.section-3 {
+	background-color: hsl(204, 75%, 70%);
+}
+.section-4 {
+	background-color: hsl(204, 75%, 90%);
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1200px) {
+	.big-one,
+	section {
+		width: 25%;
+	}
+}
+
+@media (max-width: 850px) {
+	.big-one {
+		display: none;
+	}
+	section {
+		width: 33.333333333%;
+	}
+}
+
+@media (max-width: 650px) {
+	.big-one {
+		display: block;
+	}
+	.big-one,
+	section {
+		width: 50%;
+	}
+}
+
+@media (max-width: 450px) {
+	.big-one,
+	section {
+		width: 100%;
+		float: none;
+	}
+}

@@ -1,0 +1,822 @@
+/* GENERAL STYLES */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+}
+
+.clear {
+	clear: both;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: ' ';
+	clear: both;
+	height: 0;
+}
+
+.none {
+	display: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-transform: uppercase;
+}
+
+p {
+	line-height: 1.5;
+}
+
+a:link,
+a:visited {
+	font-size: 1.6rem;
+	text-decoration: none;
+	color: #000;
+}
+
+.btn-primary:link,
+.btn-primary:visited {
+	font-size: 1.2rem;
+	letter-spacing: 1px;
+	font-weight: bold;
+	text-transform: uppercase;
+	display: inline-block;
+	color: #fff;
+	background-color: #000;
+	padding: 1.6rem 2.4rem;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.btn-secondary:link,
+.btn-secondary:link:visited {
+	font-size: 1.2rem;
+	letter-spacing: 1px;
+	font-weight: bold;
+	text-transform: uppercase;
+	display: inline-block;
+	color: #000;
+	background-color: #fff;
+	padding: 1.6rem 2.4rem;
+	position: relative;
+}
+/* LAYOUTS */
+nav {
+	padding: 1.2rem;
+	padding-bottom: 3rem;
+}
+nav ul,
+.search,
+.book-online {
+	display: none;
+}
+
+/* STYLES */
+
+/* nav */
+nav {
+	position: relative;
+	box-shadow: 0px 11px 16px -4px rgba(0, 0, 0, 0.35);
+}
+.burger {
+	float: left;
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.burger div {
+	width: 20px;
+	height: 2px;
+	background-color: #000;
+}
+
+.burger div:not(:last-child) {
+	margin-bottom: 0.4rem;
+}
+
+nav ul {
+	position: absolute;
+	top: 50%;
+	right: 50%;
+	transform: translate(50%, -50%);
+}
+
+nav li {
+	float: left;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+nav li:not(:last-child) {
+	padding-right: 3rem;
+}
+
+.logo:link,
+.logo:visited {
+	position: absolute;
+	font-size: 2rem;
+	font-weight: bold;
+	top: 50%;
+	right: 50%;
+	transform: translate(50%, -50%);
+}
+
+.cart {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 4%;
+}
+
+/* hero */
+
+.hero {
+	height: 70vh;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),
+		url('../img/hero.jpg');
+	background-size: cover;
+	background-position: top;
+	background-repeat: no-repeat;
+	padding-top: 9.6rem;
+}
+
+.hero-text {
+	padding: 0 2.4rem;
+	margin-bottom: 2.4rem;
+}
+
+h1 {
+	font-size: 4.8rem;
+	color: #fff;
+	margin-bottom: 1.2rem;
+	text-align: center;
+}
+
+.hero-text p {
+	text-transform: uppercase;
+	color: rgb(224, 224, 224);
+	letter-spacing: 1px;
+	text-align: center;
+	font-size: 1.6rem;
+	width: 30ch;
+	margin: 0 auto;
+	margin-bottom: 2.4rem;
+	line-height: 1.5;
+}
+
+.booking-card {
+	background-color: #000;
+	color: #fff;
+	width: 300px;
+	padding: 6rem 1.8rem;
+	position: relative;
+	margin-bottom: 9.6rem;
+	display: none;
+}
+.booking-card::after {
+	content: '';
+	background-color: #fff;
+	height: 50px;
+	width: 3px;
+	position: absolute;
+	left: 0;
+	top: 20px;
+}
+
+h4 {
+	font-size: 2rem;
+	font-weight: 600;
+	margin-bottom: 1.2rem;
+}
+
+.booking-card p {
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	line-height: 1.5;
+	margin-bottom: 2.4rem;
+}
+.booking-card span {
+	font-size: 3.2rem;
+	font-weight: 600;
+}
+
+.side-text {
+	display: none;
+}
+
+/* blurbs */
+.blurbs {
+	background-color: #fff;
+	margin: 4.8rem 0;
+	margin-top: 2.6rem;
+}
+
+.blurb {
+	width: 50%;
+	margin: 0 auto;
+	margin-bottom: 2.4rem;
+}
+
+.blurb:nth-child(2),
+.blurb:nth-child(3) {
+	display: none;
+}
+
+/* .blurb::before {
+	content: '';
+
+	width: 60px;
+	height: 60px;
+	background-color: rgb(196, 196, 196);
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	left: 10%;
+} */
+.blurb img {
+	width: 100%;
+}
+
+h3 {
+	font-size: 1.6rem;
+	font-weight: 600;
+	text-align: center;
+	margin-bottom: 1.2rem;
+}
+
+.blurb p {
+	font-size: 1.4rem;
+	text-align: center;
+}
+
+/* momentum */
+
+.momentum-section {
+	background-color: rgb(226, 226, 226);
+	padding: 4.8rem 2.4rem;
+}
+
+.momentum-text h2 {
+	font-size: 3.2rem;
+	line-height: 1.2;
+	margin-bottom: 1.2rem;
+}
+.momentum-text p {
+	line-height: 1.5;
+	font-size: 1.4rem;
+	margin-bottom: 2rem;
+}
+
+.btn-readmore:link,
+.btn-readmore:visited {
+	position: static;
+	transform: none;
+	margin-bottom: 4.8rem;
+}
+
+.momentum-section img {
+	max-width: 100%;
+}
+
+/* hairdresser */
+
+.hairdresser-section {
+	padding: 4.8rem 1.2rem;
+	padding-top: rem;
+}
+
+.hairdresser {
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 8rem;
+	position: relative;
+}
+
+.hairdresser img {
+	width: 100%;
+	background-color: rgb(204, 204, 204);
+}
+
+.hairdresser-titlecard {
+	background-color: #000;
+	padding: 1.2rem 2.4rem;
+	position: absolute;
+	width: 80%;
+
+	top: 90%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.hairdresser h6 {
+	font-size: 1.4rem;
+	color: #fff;
+	text-align: center;
+	font-weight: 600;
+	margin-bottom: 1.2rem;
+}
+
+.hairdresser span {
+	display: block;
+	font-size: 1rem;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+/* cta */
+
+.cta {
+	padding: 4.8rem 1.2rem;
+	background-image: url('../img/banner.png');
+	background-size: cover;
+	/* background-position: top; */
+	background-repeat: no-repeat;
+	margin-bottom: 8rem;
+}
+
+.span-title {
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	margin-bottom: 1.2rem;
+	letter-spacing: 1px;
+}
+
+.cta-text p {
+	font-size: 1.6rem;
+	margin-bottom: 1.6rem;
+}
+.cta-text p span {
+	font-size: 4rem;
+	font-weight: bold;
+	display: block;
+	margin-bottom: 0;
+}
+
+.cta-btn:link,
+.cta-btn:visited {
+	position: static;
+	transform: none;
+}
+
+/* lookbook */
+
+.section-lookbook {
+	margin-bottom: 2.4rem;
+}
+
+.section-lookbook h3 {
+	font-size: 2.4rem;
+}
+
+.section-lookbook div {
+	width: 20px;
+	height: 2px;
+	background-color: #000;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-bottom: 2.4rem;
+}
+
+.section-lookbook img {
+	width: 100%;
+}
+
+.lookbook-left,
+.lookbook-middle {
+	float: left;
+	width: 50%;
+	height: 70vh;
+}
+
+.lookbook-left {
+	padding-left: 1.2rem;
+	padding-right: 0.6rem;
+}
+.lookbook-middle {
+	padding-left: 0.6rem;
+	padding-right: 1.2rem;
+}
+
+.lookbook-right {
+	display: none;
+}
+
+.left-1 {
+	width: 100%;
+	height: 40%;
+	background-image: url('../img/lookbook_01.jpg');
+	background-size: cover;
+	background-position: right 50%;
+	background-repeat: no-repeat;
+	padding-bottom: 0.3rem;
+	background-origin: content-box;
+	cursor: pointer;
+}
+
+.left-2 {
+	width: 100%;
+	height: 60%;
+	background-image: url('../img/lookbook_04.jpg');
+	background-size: cover;
+	background-position: right 50%;
+	background-repeat: no-repeat;
+	padding-top: 0.3rem;
+	background-origin: content-box;
+	cursor: pointer;
+}
+
+.middle-1 {
+	width: 100%;
+	height: 60%;
+	background-image: url('../img/lookbook_02.jfif');
+	background-size: cover;
+	background-position: right 50%;
+	background-repeat: no-repeat;
+	padding-bottom: 0.3rem;
+	background-origin: content-box;
+	cursor: pointer;
+}
+.middle-2 {
+	width: 100%;
+	height: 40%;
+	background-image: url('../img/lookbook_03.jfif');
+	background-size: cover;
+	background-position: right 50%;
+	background-repeat: no-repeat;
+	padding-top: 0.3rem;
+	background-origin: content-box;
+	cursor: pointer;
+	position: relative;
+}
+.middle-2::after {
+	content: '+';
+	color: #fff;
+	font-size: 8rem;
+	position: absolute;
+	right: 50%;
+	top: 50%;
+	transform: translate(50%, -50%);
+}
+
+@media (min-width: 1880px) {
+	nav {
+		font-family: sans-serif;
+		height: 60px;
+	}
+	nav ul,
+	.search,
+	.book-online {
+		display: block;
+	}
+
+	.burger {
+		display: none;
+	}
+
+	.logo:link,
+	.logo:visited {
+		position: absolute;
+		font-size: 2rem;
+		font-weight: bold;
+		top: 50%;
+		left: 8%;
+		transform: translateY(-50%);
+	}
+
+	.search {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 2%;
+	}
+
+	.cart {
+		right: -5%;
+	}
+
+	.book-online {
+		text-transform: uppercase;
+		position: absolute;
+		right: 8%;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	.book-online div {
+		height: 2px;
+		width: 20px;
+		background-color: #000;
+		float: left;
+		position: absolute;
+		top: 44%;
+		left: -25%;
+		transform: translateY(50%);
+	}
+
+	.hero {
+		height: 90vh;
+		background: linear-gradient(
+				7.5deg,
+				white 230px,
+				rgb(160, 148, 148) 0% 234px,
+				transparent 0%
+			),
+			url('../img/hero.jpg') 100% 20% no-repeat;
+		border-bottom-right-radius: 100px;
+
+		position: relative;
+		margin-bottom: 12rem;
+	}
+
+	.hero-text {
+		width: 80%;
+		margin: 0 auto;
+		padding: 9.6rem 0;
+	}
+
+	h1 {
+		font-size: 8rem;
+		letter-spacing: 5px;
+		color: #fff;
+		margin-bottom: 1.2rem;
+		text-align: left;
+	}
+
+	h1 span {
+		display: block;
+	}
+
+	.hero-text p {
+		text-transform: uppercase;
+		color: rgb(224, 224, 224);
+		letter-spacing: 1px;
+		text-align: left;
+		font-size: 1.6rem;
+		width: 70ch;
+		margin: 0 0;
+		margin-bottom: 0px;
+		margin-bottom: 2.4rem;
+		line-height: 1.5;
+	}
+
+	.btn-primary:link,
+	.btn-primary:visited {
+		font-size: 1.2rem;
+		letter-spacing: 1px;
+		font-weight: bold;
+		text-transform: uppercase;
+		display: inline-block;
+		color: #fff;
+		background-color: #000;
+		padding: 1.6rem 2.4rem;
+		position: static;
+		transform: none;
+	}
+
+	.booking-card {
+		display: block;
+	}
+
+	.booking-card a {
+		margin: 0;
+	}
+
+	.booking-card p {
+		width: auto;
+	}
+
+	.hero .btn-primary:link {
+		margin-bottom: 9.6rem;
+	}
+
+	.side-text {
+		display: inline-block;
+		position: absolute;
+		right: -5.8%;
+		top: 50%;
+		color: #fff;
+		text-transform: uppercase;
+		font-size: 1.6rem;
+		font-weight: 600;
+		letter-spacing: 2px;
+		transform: rotate(90deg);
+	}
+
+	.blurb:nth-child(2),
+	.blurb:nth-child(3) {
+		display: block;
+	}
+
+	.blurbs {
+		width: 70%;
+		margin: 0 auto;
+		margin-bottom: 9.6rem;
+	}
+
+	.blurb {
+		float: left;
+		width: 33.33%;
+		margin: 0 auto;
+		margin-bottom: 0px;
+		margin-bottom: 2.4rem;
+	}
+
+	.blurb img {
+		width: 40%;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	.blurb h3 {
+		font-size: 2rem;
+	}
+	.blurb p {
+		width: 45ch;
+		margin: 0 auto;
+	}
+
+	.blurb:not(:last-child) {
+	}
+
+	.momentum-container {
+		width: 70%;
+		margin: 0 auto;
+		position: relative;
+	}
+	.momentum-section img {
+		width: 50%;
+	}
+
+	.momentum-text {
+		width: 50%;
+		float: left;
+		padding-right: 9.6rem;
+	}
+
+	.momentum-text h2 {
+		font-size: 4.8rem;
+		line-height: 1.2;
+		margin-bottom: 1.2rem;
+	}
+	.momentum-text span {
+		display: block;
+	}
+	.momentum-text p {
+		font-size: 2rem;
+	}
+
+	.momentum-text .btn-readmore {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		margin-bottom: 0;
+	}
+
+	.hairdresser-section {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.hairdresser {
+		width: 33.33%;
+		float: left;
+		margin: 0 auto;
+		margin-bottom: 0px;
+		margin-bottom: 8rem;
+		position: relative;
+	}
+
+	.hairdresser img {
+		height: 700px;
+	}
+	.hairdresser:nth-child(1) {
+		padding-right: 1.8rem;
+	}
+	.hairdresser:nth-child(2) {
+		padding-right: 0.6rem;
+		padding-left: 0.6rem;
+	}
+	.hairdresser:nth-child(3) {
+		padding-left: 1.8rem;
+	}
+	.hairdresser-titlecard {
+		bottom: -4%;
+		top: 94%;
+	}
+
+	.cta-container {
+		width: 80%;
+		margin: 0 auto;
+	}
+	.cta {
+		height: 50vh;
+		background-position: center;
+		padding: 9.6rem;
+	}
+
+	.cta-text p span {
+	}
+	.cta-text p {
+		font-size: 4rem;
+		text-transform: uppercase;
+		width: 20ch;
+	}
+
+	.section-lookbook h3 {
+		font-size: 4.8rem;
+	}
+
+	.section-lookbook div {
+		width: 20px;
+		height: 2px;
+		background-color: #000;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		margin-bottom: 6.8rem;
+	}
+
+	.lookbook {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.lookbook-right,
+	.lookbook-left,
+	.lookbook-middle {
+		display: block;
+		width: 33.33%;
+		float: left;
+		height: 80vh;
+	}
+
+	.lookbook-left {
+		padding-right: 1.8rem;
+	}
+	.lookbook-middle {
+		padding-right: 0.9rem;
+		padding-left: 0.9rem;
+	}
+
+	.lookbook-right {
+		padding-left: 1.8rem;
+	}
+
+	.left-1 {
+		padding-bottom: 1.2rem;
+	}
+	.left-2 {
+		padding-top: 1.2rem;
+	}
+	.middle-1 {
+		padding-bottom: 1.2rem;
+	}
+	.middle-2 {
+		padding-top: 1.2rem;
+	}
+
+	.right-1 {
+		width: 100%;
+		height: 40%;
+		background-image: url('../img/lookbook_01.jpg');
+		background-size: cover;
+		background-position: right 50%;
+		background-repeat: no-repeat;
+		padding-bottom: 1.2rem;
+		background-origin: content-box;
+		cursor: pointer;
+	}
+
+	.right-2 {
+		width: 100%;
+		height: 60%;
+		background-image: url('../img/lookbook_04.jpg');
+		background-size: cover;
+		background-position: right 50%;
+		background-repeat: no-repeat;
+		padding-top: 1.2rem;
+		background-origin: content-box;
+		cursor: pointer;
+	}
+}

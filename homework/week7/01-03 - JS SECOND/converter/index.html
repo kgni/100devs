@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="This is where your description goes" />
+		<meta name="keywords" content="one, two, three" />
+
+		<title>Converter</title>
+
+		<!-- external CSS link -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<!-- TABS -->
+		<div class="container">
+			<div class="tabs">
+				<div class="tab tab-1 active-tab">Length</div>
+				<div class="tab tab-2">Mass</div>
+				<div class="tab tab-3">Speed</div>
+			</div>
+
+			<!-- LENGTH -->
+			<section class="converter converter-length">
+				<div class="converter-text length-converter active-converter">
+					<div class="input-container">
+						<input class="input" id="length-input" type="text" placeholder="" />
+						<select name="length" class="select-length" id="length-select">
+							<option value="kilometers">Kilometers (km)</option>
+							<option value="miles">Miles (mi)</option>
+							<option value="meters">Meters (m)</option>
+							<option value="centimeters">Centimeters (cm)</option>
+							<option value="millimeters">Millimeters (mm)</option>
+							<option value="inches">Inches (in)</option>
+							<option value="feet">Feet (ft)</option>
+						</select>
+					</div>
+					<button class="btn btn-length">Convert</button>
+					<div class="converted-container converted-container-length">
+						<div class="unit-container kilometers-container hidden">
+							<p class="converted-item kilometers-converted"></p>
+							<span class="kilometer-unit">km</span>
+						</div>
+						<div class="unit-container meters-container">
+							<p class="converted-item meters-converted"></p>
+							<span class="meter-unit">m</span>
+						</div>
+						<div class="unit-container centimeters-container">
+							<p class="converted-item centimeters-converted"></p>
+							<span class="centimeter-unit">cm</span>
+						</div>
+						<div class="unit-container millimeters-container">
+							<p class="converted-item millimeters-converted"></p>
+							<span class="millimeter-unit">mm</span>
+						</div>
+						<div class="unit-container miles-container">
+							<p class="converted-item miles-converted"></p>
+							<span class="miles-unit">mi</span>
+						</div>
+						<div class="unit-container inches-container">
+							<p class="converted-item inches-converted"></p>
+							<span class="inches-unit">in</span>
+						</div>
+						<div class="unit-container feet-container">
+							<p class="converted-item feet-converted"></p>
+							<span class="feet-unit">ft</span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- WEIGHT -->
+			<section class="converter converter-weight hidden">
+				<div class="converter-text weight-converter active-converter">
+					<div class="input-container">
+						<input class="input" id="weight-input" type="text" placeholder="" />
+						<select name="weight" class="select-weight" id="weight-select">
+							<option value="ton">Ton</option>
+							<option value="kilogram">Kilograms (kg)</option>
+							<option value="gram">Grams (g)</option>
+							<option value="milligram">Milligrams (mg)</option>
+							<option value="pound">Pounds (lb)</option>
+							<option value="ounce">Ounces (oz)</option>
+							<option value="stone">Stones (st)</option>
+						</select>
+					</div>
+					<button class="btn btn-weight">Convert</button>
+					<div class="converted-container converted-container-length">
+						<div class="unit-container ton-container hidden">
+							<p class="converted-item ton-converted"></p>
+							<span class="ton-unit">ton</span>
+						</div>
+						<div class="unit-container kilogram-container">
+							<p class="converted-item kilogram-converted"></p>
+							<span class="kilogram-unit">kg</span>
+						</div>
+						<div class="unit-container gram-container">
+							<p class="converted-item gram-converted"></p>
+							<span class="gram-unit">g</span>
+						</div>
+						<div class="unit-container milligram-container">
+							<p class="converted-item milligram-converted"></p>
+							<span class="milligram-unit">mg</span>
+						</div>
+						<div class="unit-container pound-container">
+							<p class="converted-item pound-converted"></p>
+							<span class="pound-unit">lb</span>
+						</div>
+						<div class="unit-container ounce-container">
+							<p class="converted-item ounce-converted"></p>
+							<span class="ounce-unit">oz</span>
+						</div>
+						<div class="unit-container stone-container">
+							<p class="converted-item stone-converted"></p>
+							<span class="stone-unit">st</span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<!-- SPEED -->
+
+			<section class="converter converter-speed hidden">
+				<div class="converter-text speed-converter active-converter">
+					<div class="input-container">
+						<input class="input" id="speed-input" type="text" placeholder="" />
+						<select name="speed" class="select select-speed" id="select-speed">
+							<option value="kilometers">km/h</option>
+							<option value="miles">mph</option>
+							<option value="knot">knot</option>
+							<option value="meters">m/s</option>
+							<option value="feet">f/s</option>
+						</select>
+					</div>
+					<button class="btn btn-speed">Convert</button>
+					<div class="converted-container converted-container-length">
+						<div class="unit-container kilometers-hour-container hidden">
+							<p class="converted-item kilometers-hour-converted"></p>
+							<span class="kilometer-hour-unit">km/h</span>
+						</div>
+						<div class="unit-container miles-hour-container">
+							<p class="converted-item miles-hour-converted"></p>
+							<span class="miles-hour-unit">mph</span>
+						</div>
+						<div class="unit-container knot-container">
+							<p class="converted-item knot-converted"></p>
+							<span class="knot-unit">knot</span>
+						</div>
+						<div class="unit-container meter-second-container">
+							<p class="converted-item meter-second-converted"></p>
+							<span class="meter-second-unit">m/s</span>
+						</div>
+						<div class="unit-container feet-second-container">
+							<p class="converted-item feet-second-converted"></p>
+							<span class="feet-second-unit">f/s</span>
+						</div>
+		
+					</div>
+				</div>
+			</section>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

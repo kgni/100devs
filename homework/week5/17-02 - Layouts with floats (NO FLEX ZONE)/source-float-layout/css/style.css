@@ -1,0 +1,304 @@
+/* Box Model Hack */
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+	content: '.';
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+a:link,
+a:visited {
+	text-decoration: none;
+	color: #798a98;
+	font-size: 1.4rem;
+	font-weight: 500;
+}
+
+.btn:link,
+.btn:visited {
+	color: #fff;
+	background-color: #304659;
+	padding: 1.2rem 2.4rem;
+	font-size: 1.4rem;
+	font-weight: 500;
+	letter-spacing: 1px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #2c4356;
+}
+
+p {
+	color: #607384;
+	font-size: 1.4rem;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+	padding: 1.8rem 0;
+	padding-bottom: 3.6rem;
+}
+
+footer {
+}
+
+nav {
+	width: 90%;
+	position: relative;
+	margin: 0 auto;
+}
+
+nav .logo {
+	float: left;
+}
+
+nav ul {
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+nav li {
+	margin-top: 0.6rem;
+	margin-right: 2.4rem;
+	display: inline-block;
+}
+
+nav li:last-child {
+	margin: 0;
+}
+
+nav .btn {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.hero-top {
+	margin-bottom: 20rem;
+}
+.hero-text {
+	float: left;
+	width: 50%;
+	margin-top: 12rem;
+	margin-bottom: 6rem;
+}
+.img-container {
+	width: 50%;
+	float: right;
+	margin-top: 6rem;
+}
+.hero img {
+	float: right;
+	width: 800px;
+	position: absolute;
+	right: 0;
+}
+
+.features {
+	width: 80%;
+}
+
+.feature {
+	width: 25%;
+	float: left;
+	padding-right: 6rem;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+/* NAV */
+
+header {
+	background-color: #f5f9fc;
+}
+
+.burger div {
+	width: 20px;
+	height: 3px;
+	background-color: black;
+	margin-bottom: 0.4rem;
+}
+.burger {
+	margin-top: 0.6rem;
+	float: left;
+	display: none;
+}
+
+.logo {
+	font-size: 2.4rem;
+	font-weight: 700;
+	color: #304659;
+}
+
+/* HERO */
+
+main {
+	background-color: #f5f9fc;
+}
+
+/* .hero-top {
+	background-image: url('../img/hero-img.png');
+	background-size: 50%;
+	background-repeat: no-repeat;
+	background-position-x: 100%;
+} */
+
+.tagline {
+	font-size: 1.2rem;
+	color: #889daf;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+	margin-bottom: 1.4rem;
+	display: inline-block;
+}
+
+h1 {
+	font-size: 4rem;
+	width: 15ch;
+	line-height: 1.2;
+	color: #304659;
+	font-weight: 700;
+	margin-bottom: 1.8rem;
+}
+
+form {
+	margin-bottom: 2.4rem;
+}
+
+input {
+	background-color: #e1e9f0;
+	border: none;
+	padding: 1.2rem;
+	width: 300px;
+}
+
+input::placeholder {
+	color: hsl(208, 33%, 61%);
+	font-weight: 700;
+}
+
+button {
+	border: none;
+	padding: 1.2rem 2.4rem;
+	cursor: pointer;
+	background-color: #304659;
+	color: #fff;
+	font-weight: 700;
+}
+
+.hero-text p {
+	line-height: 1.5;
+	width: 40ch;
+}
+
+/* features */
+
+.features {
+	padding-bottom: 6rem;
+	margin: 0 auto;
+}
+.icon {
+	width: 3.6rem;
+	color: #2c4356;
+	margin-bottom: 1.2rem;
+}
+
+.feature h3 {
+	font-size: 1.4rem;
+	font-weight: 700;
+	margin-bottom: 1.2rem;
+}
+
+.feature p {
+	margin-bottom: 1.6rem;
+	width: 28ch;
+	line-height: 1.5;
+}
+
+.feature-link:link,
+.feature-link:visited {
+	color: #304659;
+	font-weight: 700;
+}
+.feature-link:hover,
+.feature-link:active {
+	color: #608bb1;
+	font-weight: 700;
+}
+
+.chev-icon {
+	width: 1rem;
+	color: #1d2831;
+}
+
+/* collecting */
+
+.collecting {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 4.8rem;
+}
+
+.collecting-text-container {
+	width: 50%;
+	margin-bottom: 4.8rem;
+}
+h2 {
+	font-size: 4.8rem;
+	line-height: 1.2;
+	font-weight: 500;
+	margin-bottom: 2.4rem;
+}
+
+.collecting h2 {
+	width: 20ch;
+}
+
+.collecting p {
+	width: 59ch;
+	line-height: 1.5;
+}
+
+.box {
+	width: 100%;
+	height: 500px;
+	background-color: #e1e9f0;
+	margin-bottom: 4.8rem;
+}

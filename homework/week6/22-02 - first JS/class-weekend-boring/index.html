@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="description"
+			content="This app lets you know today is class, the weekend, or a boring day"
+		/>
+		<meta name="keywords" content="class, weekend, boring" />
+
+		<title>What is today?</title>
+
+		<!-- external CSS link -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<main>
+			<div class="text-container">
+				<h1>What day is it?</h1>
+				<div class="answer">
+					<iframe
+						class="answer-img"
+						src=""
+						frameborder="0"
+						allowfullscreen
+					></iframe>
+					<h2 class="answer-text"></h2>
+				</div>
+				<input
+					class="input"
+					type="text"
+					placeholder="Enter a day of the week"
+				/>
+				<a href="#" class="btn">Check</a>
+			</div>
+		</main>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

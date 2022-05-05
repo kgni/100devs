@@ -1,0 +1,230 @@
+/* 
+================
+GENERAL STYLES
+===============-
+*/
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	padding: 2.4rem;
+	width: 80%;
+	font-family: 'Space Grotesk', sans-serif;
+}
+
+img {
+	width: 100%;
+}
+
+a:link,
+a:visited {
+	color: #777;
+	text-decoration: none;
+	font-size: 2rem;
+	display: block;
+}
+
+ul {
+	list-style-type: none;
+}
+
+p {
+	font-size: 2rem;
+	line-height: 1.5;
+	color: #777;
+}
+
+.clear {
+	clear: both;
+}
+
+.clearfix::after {
+	content: '';
+	clear: both;
+	display: table;
+}
+
+.author {
+	font-size: 1.6rem;
+	font-weight: bold;
+	display: inline-block;
+	color: rgb(61, 61, 61);
+}
+
+/* 
+================
+LAYOUT
+===============-
+*/
+
+header,
+.main-section,
+.side-section {
+	float: left;
+}
+
+header {
+	width: 15%;
+	padding-right: 1.2rem;
+}
+
+.main-section {
+	width: 55%;
+}
+
+.side-section {
+	width: 30%;
+}
+
+.latest-section {
+	margin-left: 15%;
+}
+
+.latest-article,
+.latest-text,
+.latest-img {
+	padding-right: 3.6rem;
+	float: left;
+	width: 33.33%;
+}
+
+.latest-img {
+	padding: 0;
+}
+
+/* 
+================
+STYLES
+===============-
+*/
+
+/* NAV BAR */
+
+.login-nav * {
+	margin-bottom: 1.2rem;
+}
+
+.login-nav {
+	margin-bottom: 3.6rem;
+}
+
+.join-extra-crunch:link,
+.join-extra-crunch:visited {
+	color: #ffc518;
+	font-weight: bold;
+}
+
+.join-extra-crunch:hover,
+.join-extra-crunch:active {
+	color: #dca946;
+}
+.login:link,
+.login:visited {
+	font-weight: bold;
+}
+
+.login:hover,
+.login:active {
+	color: #17ad70;
+}
+.logo {
+	width: 30%;
+}
+
+.nav-links .nav-link:link,
+.nav-links .nav-link:visited {
+	color: #777;
+	text-decoration: none;
+	font-size: 2.4rem;
+	display: block;
+	margin-bottom: 0.6rem;
+}
+
+/* Main section */
+
+.main-section {
+	padding-right: 4.8rem;
+	margin-bottom: 2.4rem;
+}
+
+.extra-crunch {
+	font-size: 2rem;
+	color: orange;
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 4rem;
+	font-weight: bold;
+	margin: 1.4rem 0;
+}
+
+.author {
+	margin-bottom: 0.6rem;
+	cursor: pointer;
+}
+
+.author:hover {
+	color: #029f00;
+}
+
+/* Side section */
+
+.side-link:link,
+.side-link:visited {
+	font-size: 3.2rem;
+	color: black;
+	font-weight: bolder;
+	margin-bottom: 1.2rem;
+}
+
+.side-link:hover,
+.side-link:active {
+	color: #999;
+}
+
+.side-items {
+	margin-bottom: 1.8rem;
+	border-bottom: 1px solid rgb(83, 83, 83);
+}
+
+.side-items:last-of-type {
+	border: none;
+}
+
+.side-items img {
+	width: 7.5%;
+}
+
+/* Latest section */
+
+h3 {
+	margin-bottom: 2.4rem;
+	padding-bottom: 1.2rem;
+	border-bottom: 1px solid rgb(226, 226, 226);
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 3.2rem;
+	margin-bottom: 1.2rem;
+}
+
+.latest-container {
+	margin-bottom: 200px;
+}
+
+.timestamp {
+	display: block;
+	font-size: 1.6rem;
+	letter-spacing: 1px;
+	color: #777;
+}
