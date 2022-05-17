@@ -127,4 +127,14 @@ class BackEnd extends Contractor {
 }
 
 const bob = new FrontEnd('Bob', ['HTML', 'CSS', 'JS'], 50000);
-const bobBackend = new BackEnd('Bob', ['Node.js', 'Express', 'MongoDB'], 60000);
+const bobBackend = new BackEnd(
+	'Bobber',
+	['Node.js', 'Express', 'MongoDB'],
+	60000
+);
+
+let agencyList = [bob, bobBackend];
+
+for (agent of agencyList) {
+	console.log(agent.sayHello());
+}
