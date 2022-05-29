@@ -1,3 +1,21 @@
-h1{
-  color: red;
+h1 {
+	color: red;
+}
+
+img {
+	width: 200px;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+}
+
+.winner {
+	text-align: center;
+}
+
+.playerContainer,
+.computerContainer {
+	width: 500px;
 }

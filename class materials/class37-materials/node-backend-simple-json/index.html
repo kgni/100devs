@@ -1,17 +1,33 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="/css/style.css">
-  </head>
-  <body>
-    <h1>Hello, world! (index.html)</h1>
-    <input id="userName" type="text" name="" placeholder="Enter Name">
-    <button id="clickMe" type="button" name="button">Click Me</button>
-    <h2 id="personName"></h2>
-    <h2 id="personStatus"></h2>
-    <h2 id="personOccupation"></h2>
-    <script type="text/javascript" src="/js/main.js"></script>
-  </body>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="/css/style.css" />
+	</head>
+	<body>
+		<h1>Hello, world! (index.html)</h1>
+		<select name="choice" id="choice">
+			<option value="rock">Rock</option>
+			<option value="paper">Paper</option>
+			<option value="scissors">Scissors</option>
+		</select>
+		<button id="clickMe" type="button" name="button">Play</button>
+
+		<div class="winner"></div>
+		<main>
+			<div class="playerContainer">
+				<h2>Player</h2>
+				<h3 class="playerChoice"></h3>
+				<img class="playerImg" src="" alt="" />
+			</div>
+			<div class="computerContainer">
+				<h2>Computer</h2>
+				<h3 class="computerChoice"></h3>
+				<img class="computerImg" src="" alt="" />
+			</div>
+		</main>
+
+		<script type="text/javascript" src="/js/main.js"></script>
+	</body>
 </html>
