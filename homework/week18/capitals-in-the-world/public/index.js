@@ -6,14 +6,18 @@ const capital = document.querySelector('.capital');
 btnCapital.addEventListener('click', fetchCapital);
 
 async function fetchCapital() {
-	const res = await fetch(`/api/${countryInput.value}`);
-	const data = await res.json();
-	console.log(data);
+	try {
+		const res = await fetch(`/api/${countryInput.value}`);
+		const data = await res.json();
+		console.log(data);
 
-	country.innerText = `${
-		countryInput.value[0].toUpperCase() +
-		countryInput.value.slice(1).toLowerCase()
-	}`;
+		country.innerText = `${
+			countryInput.value[0].toUpperCase() +
+			countryInput.value.slice(1).toLowerCase()
+		}`;
 
-	capital.innerText = `${data.capital}`;
+		capital.innerText = `${data.capital}`;
+	} catch (e) {
+		console.log(e);
+	}
 }
