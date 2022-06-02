@@ -4,6 +4,8 @@ const PORT = 8000;
 
 const data = require('./data');
 
+app.use(express.static('public'));
+
 app.get('/', (req, res) => {
 	res.sendFile(__dirname + '/index.html');
 });
@@ -17,7 +19,7 @@ app.get('/api/:country', (req, res) => {
 	if (data[country]) {
 		res.json(data[country]);
 	} else {
-		throw 'Could not fetch, try again...';
+		throw Error('Could not fetch, try again...');
 	}
 });
 
