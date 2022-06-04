@@ -2,30 +2,27 @@ const express = require('express');
 const app = express();
 const PORT = 8000;
 
+// data file containing our notes
+const notes = require('./notes');
+
 app.get('/', (req, res) => {
-	res.send('Hello World');
+	res.sendFile(__dirname + '/index.html');
+});
+app.get('/api/notes', (req, res) => {
+	res.json(notes);
 });
 
-let notes = [
-	{
-		id: 1,
-		content: 'HTML is easy',
-		date: '2022-05-30T17:30:31.098Z',
-		important: true,
-	},
-	{
-		id: 2,
-		content: 'Browser can execute only Javascript',
-		date: '2022-05-30T18:39:34.091Z',
-		important: false,
-	},
-	{
-		id: 3,
-		content: 'GET and POST are the most important methods of HTTP protocol',
-		date: '2022-05-30T19:20:14.298Z',
-		important: true,
-	},
-];
+app.get('/api/notes/:id', (req, res) => {
+	const id = req.params.id;
+	console.log(typeof id);
+	const note = notes.find((note) => note.id == id);
+	if (note.length === 0) {
+		throw 'That note does not exist';
+	} else {
+		console.log(note);
+		res.json(note);
+	}
+});
 
 app.listen(process.env.PORT || PORT, () => {
 	console.log(`SERVER IS RUNNING ON PORT ${PORT}`);
