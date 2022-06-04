@@ -4,7 +4,7 @@ const PORT = 8000;
 
 app.use(express.json());
 
-const notes = [
+let notes = [
 	{
 		id: 1,
 		content: 'HTML is easy',
